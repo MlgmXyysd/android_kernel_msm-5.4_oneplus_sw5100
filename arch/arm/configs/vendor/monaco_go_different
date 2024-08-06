@@ -1,0 +1,128 @@
+#----------add configs-------------
+#-----------qcom-------------------
+CONFIG_DEBUG_MISC=n
+CONFIG_DEBUG_PREEMPT=n
+CONFIG_SERIAL_MSM_GENI_EARLY_CONSOLE=y
+CONFIG_SERIAL_MSM_GENI_CONSOLE=y
+CONFIG_SPI_SLAVE=y
+CONFIG_QCOM_RTB=y
+CONFIG_QCOM_RTB_SEPARATE_CPUS=y
+CONFIG_QCOM_RTB_QGKI=y
+#config for zram compression algorithm set lz4
+CONFIG_CRYPTO_LZ4=y
+#-----------end qcom---------------
+
+
+#-----------oplus------------------
+CONFIG_OPLUS=y
+#config for oplus project info for kernel
+CONFIG_OPLUS_COMMON_SOFT=y
+#config for modifying the oled display driver code
+CONFIG_OPLUS_LCD_MODIFY=y
+#config for modifying the touch pannel driver code
+CONFIG_OPLUS_TP_MODIFY=y
+#config for modifying the  driver ocde of charging module
+CONFIG_OPLUS_CHARGING_MODIFY=y
+#config for modifying the system power supply
+CONFIG_OPLUS_POWER_MODIFY=y
+#config for add the commuction between 8909 and mcu.
+CONFIG_OPLUS_DUAL_SYS_COMM_MODIFY=y
+#config for modifying the audio driver
+CONFIG_OPLUS_AUDIO_MODIFY=y
+#config for modifying the wifi function
+CONFIG_OPLUS_WIFI_MODIFY=y
+#config for modifying the bluetooth function
+CONFIG_OPLUS_BT_MODIFY=n
+#config for modifying the Near Field Communication
+CONFIG_OPLUS_NFC_MODIFY=y
+#config for modifying the sensor driver and sensor management function
+CONFIG_OPLUS_SENSOR_MODIFY=y
+#config for modifying the motor driver
+CONFIG_OPLUS_MOTOR_MODIFY=y
+#config for production line test function
+CONFIG_OPLUS_PRODUCTION_TEST_MODIFY=y
+
+CONFIG_OPLUS_POWERINFO_FTM=y
+
+#config for swd driver
+CONFIG_OPLUS_SWD=y
+#config for GPS function
+CONFIG_OPLUS_GPS_MODIFY=y
+
+CONFIG_OPLUS_SWITCH=y
+
+CONFIG_OPLUS_FEATURE_PROJECTINFO=y
+
+CONFIG_TOUCHSCREEN_RM_TS=n
+CONFIG_TOUCHSCREEN_CYPRESS_CYTTSP5=y
+CONFIG_TOUCHSCREEN_CYPRESS_CYTTSP5_DEVICETREE_SUPPORT=y
+CONFIG_TOUCHSCREEN_CYPRESS_CYTTSP5_I2C=y
+CONFIG_TOUCHSCREEN_CYPRESS_CYTTSP5_DEVICE_ACCESS=y
+CONFIG_TOUCHSCREEN_CYPRESS_CYTTSP5_LOADER=y
+CONFIG_TOUCHSCREEN_FTS=y
+CONFIG_TOUCHSCREEN_ZTX=y
+
+CONFIG_INPUT_PIXART_OTS_PAT9125_SWITCH=y
+
+#config for bcmdhd
+CONFIG_BCMDHD=m
+CONFIG_BCMDHD_SDIO=y
+#CONFIG_BCMDHD_NAN=y
+CONFIG_CLD_LL_CORE=n
+CONFIG_WCNSS_MEM_PRE_ALLOC=n
+#config for nxpnfc
+CONFIG_NFC=y
+CONFIG_NFC_PN553_DEVICES=y
+CONFIG_NXP_P73_DEVICES=y
+
+CONFIG_PSTORE=y
+CONFIG_PSTORE_RAM=y
+CONFIG_AW8624_HAPTIC=m
+CONFIG_AW86225_HAPTIC=n
+CONFIG_AW86927_HAPTIC=m
+#-----------end oplus---------------
+#----------end configs--------------
+
+CONFIG_HZ=300
+CONFIG_HZ_300=y
+
+#----------delete qcom config-------
+-CONFIG_SDW_DEBUGCC_MONACO=y
+-CONFIG_USB_GADGET_DEBUG_FILES=y
+-CONFIG_DEBUG_PREEMPT=y
+-CONFIG_RPMSG_QCOM_GLINK_SLATECOM=y
+-CONFIG_MSM_SLATECOM=y
+-CONFIG_MSM_SLATECOM_INTERFACE=y
+-CONFIG_MSM_SLATECOM_RPMSG=y
+-CONFIG_MSM_SLATERSB=y
+-CONFIG_MSM_SLATERSB_RPMSG=y
+-CONFIG_MSM_PIL_SSR_SLATE=y
+-CONFIG_MSM_SEB=y
+-CONFIG_MSM_SEB_RPMSG=y
+-CONFIG_ICNSS2=y
+-CONFIG_ICNSS2_QMI=y
+-CONFIG_CNSS_UTILS=y
+-CONFIG_CNSS_GENL=y
+-CONFIG_TOUCHSCREEN_PARADE=y
+-CONFIG_TOUCHSCREEN_PARADE_DEVICETREE_SUPPORT=y
+-CONFIG_TOUCHSCREEN_PARADE_I2C=y
+-CONFIG_TOUCHSCREEN_PARADE_DEVICE_ACCESS=y
+-CONFIG_INPUT_QCOM_HV_HAPTICS=y
+-CONFIG_SLIMBUS_MSM_NGD=y
+-CONFIG_QCOM_EUD=y
+#----------end qcom config----------
+
+#----------add HCI Driver config-------
+CONFIG_SERIAL_DEV_BUS=y
+CONFIG_BT_HCIUART=y
+CONFIG_BT_HCIUART_SERDEV=y
+CONFIG_BT_HCIUART_BCSP=y
+CONFIG_BT_HCIUART_H4=y
+CONFIG_BT_HCIUART_3WIRE=y
+#----------end HCI Driver config-------
+
+#----------add multimedia config-------
+CONFIG_OPLUS_FEATURE_FEEDBACK=y
+#----------end multimedia config-------
+
+CONFIG_I2C_GPIO=m

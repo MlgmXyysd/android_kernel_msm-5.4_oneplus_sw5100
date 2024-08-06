@@ -1,0 +1,6 @@
+config TOUCHSCREEN_ZTX
+    bool "Zinitix Touchscreen"
+    default n
+    help
+      Say Y here if you have Focaltech touch panel.
+      If unsure, say N.
